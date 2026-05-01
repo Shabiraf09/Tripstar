@@ -29,5 +29,70 @@
     </div>
     <button class="hamburger" id="hamburger"><i class="fa-solid fa-bars"></i></button>
   </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home">Home</a>
+    <a href="#rooms">Rooms</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  
+  <div class="panel" id="notifPanel">
+    <div class="panel-header">
+      <h3>Notifications</h3>
+      <button class="panel-close" onclick="closePanel('notifPanel')"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <ul class="panel-list">
+      <li><i class="fa-solid fa-tag accent"></i> <span>20% off on weekend stays – use <strong>WKND20</strong></span></li>
+      <li><i class="fa-solid fa-star accent"></i> <span>Your last review earned you 50 points!</span></li>
+      <li><i class="fa-solid fa-bell accent"></i> <span>Check-in reminder: tomorrow at 2 PM</span></li>
+    </ul>
+  </div>
+
+ 
+  <div class="panel" id="bookingPanel">
+    <div class="panel-header">
+      <h3>My Bookings</h3>
+      <button class="panel-close" onclick="closePanel('bookingPanel')"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <ul class="panel-list">
+      <li>
+        <i class="fa-solid fa-bed accent"></i>
+        <span><strong>Deluxe Suite</strong><br/>May 10 – May 14 · $480</span>
+      </li>
+    </ul>
+    <p class="panel-empty">No past bookings yet.</p>
+  </div>
+
+  <div class="overlay" id="overlay" onclick="closeAllPanels()"></div>
+
+  
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">1,480,086 rooms worldwide</p>
+      <h1>Book Your Stay<br/>with <span>Tripster</span></h1>
+      <p class="hero-sub">Discover handpicked hotels at unbeatable prices.</p>
+      <form class="search-bar" onsubmit="handleSearch(event)">
+        <div class="field">
+          <label>Location</label>
+          <input type="text" placeholder="Where are you going?" id="searchLocation"/>
+        </div>
+        <div class="field">
+          <label>Check-in</label>
+          <input type="date" id="checkin"/>
+        </div>
+        <div class="field">
+          <label>Check-out</label>
+          <input type="date" id="checkout"/>
+        </div>
+        <div class="field">
+          <label>Guests</label>
+          <input type="number" placeholder="2" min="1" max="10" id="guests"/>
+        </div>
+        <button type="submit" class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </form>
+    </div>
+  </section>
 </body>
 </html>
