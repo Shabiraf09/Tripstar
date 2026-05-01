@@ -185,5 +185,32 @@
 
     </div>
   </section>
+  <!-- CONTACT SECTION -->
+  <section class="contact" id="contact">
+    <div class="contact-left">
+      <h2>Get in Touch</h2>
+      <p>Have questions? Our team is here 24/7 to help you plan the perfect stay.</p>
+      <div class="contact-info">
+        <p><i class="fa-solid fa-phone accent"></i> +1 (800) 555-TRIP</p>
+        <p><i class="fa-solid fa-envelope accent"></i> hello@tripster.com</p>
+        <p><i class="fa-solid fa-location-dot accent"></i> 42 Harbor Blvd, New York, NY</p>
+      </div>
+    </div>
+    <form class="contact-form" onsubmit="sendMessage(event)">
+      <div class="form-group">
+        <label>Name</label>
+        <input type="text" placeholder="Your name" required/>
+      </div>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" placeholder="Your email" required/>
+      </div>
+      <div class="form-group">
+        <label>Message</label>
+        <textarea rows="4" placeholder="How can we help?" required></textarea>
+      </div>
+      <button type="submit" class="btn-primary full">Send Message</button>
+    </form>
+  </section>
 </body>
 </html>
