@@ -114,5 +114,76 @@
       </div>
     </div>
   </section>
+    <section class="rooms" id="rooms">
+    <h2 class="section-title">Our Rooms</h2>
+    <p class="section-sub">Choose the comfort that fits your journey</p>
+    <div class="rooms-grid">
+
+      <div class="room-card" onclick="openDetail('standard')">
+        <div class="room-img" style="background-image:url('https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=600')">
+          <span class="room-tag">From $89/night</span>
+        </div>
+        <div class="room-info">
+          <h3>Standard Room</h3>
+          <p>Cozy and well-appointed with a queen bed, free Wi-Fi, and a flat-screen TV.</p>
+          <div class="room-features">
+            <span><i class="fa-solid fa-wifi"></i> Free Wi-Fi</span>
+            <span><i class="fa-solid fa-snowflake"></i> A/C</span>
+            <span><i class="fa-solid fa-tv"></i> Smart TV</span>
+          </div>
+          <button class="btn-primary full" onclick="event.stopPropagation(); bookRoom('Standard Room', 89)">Book Now</button>
+        </div>
+      </div>
+
+      <div class="room-card" onclick="openDetail('deluxe')">
+        <div class="room-img" style="background-image:url('https://images.unsplash.com/photo-1590490360182-c33d57733427?w=600')">
+          <span class="room-tag best">Best Value</span>
+        </div>
+        <div class="room-info">
+          <h3>Deluxe Suite</h3>
+          <p>Spacious suite with king bed, city views, a sitting area, and premium amenities.</p>
+          <div class="room-features">
+            <span><i class="fa-solid fa-wifi"></i> Free Wi-Fi</span>
+            <span><i class="fa-solid fa-bath"></i> Jacuzzi</span>
+            <span><i class="fa-solid fa-mug-hot"></i> Breakfast</span>
+          </div>
+          <button class="btn-primary full" onclick="event.stopPropagation(); bookRoom('Deluxe Suite', 149)">Book Now</button>
+        </div>
+      </div>
+
+      <div class="room-card" onclick="openDetail('family')">
+        <div class="room-img" style="background-image:url('https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=600')">
+          <span class="room-tag">From $179/night</span>
+        </div>
+        <div class="room-info">
+          <h3>Family Suite</h3>
+          <p>Two bedrooms, a living room, and all the space your family needs to relax.</p>
+          <div class="room-features">
+            <span><i class="fa-solid fa-users"></i> Up to 5</span>
+            <span><i class="fa-solid fa-kitchen-set"></i> Kitchenette</span>
+            <span><i class="fa-solid fa-gamepad"></i> Game Room</span>
+          </div>
+          <button class="btn-primary full" onclick="event.stopPropagation(); bookRoom('Family Suite', 179)">Book Now</button>
+        </div>
+      </div>
+
+      <div class="room-card" onclick="openDetail('penthouse')">
+        <div class="room-img" style="background-image:url('https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=600')">
+          <span class="room-tag luxury">Luxury</span>
+        </div>
+        <div class="room-info">
+          <h3>Penthouse</h3>
+          <p>The pinnacle of luxury — private terrace, butler service, and panoramic views.</p>
+          <div class="room-features">
+            <span><i class="fa-solid fa-star"></i> Butler</span>
+            <span><i class="fa-solid fa-water"></i> Pool View</span>
+            <span><i class="fa-solid fa-champagne-glasses"></i> Mini Bar</span>
+          </div>
+          <button class="btn-primary full" onclick="event.stopPropagation(); bookRoom('Penthouse', 399)">Book Now</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
 </body>
 </html>
